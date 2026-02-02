@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Física - Universidad Central del Ecuador</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación de páginas -->
+    <div class="page-navigation">
+        <button class="nav-arrow nav-prev" id="prevPage" aria-label="Página anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <div class="page-indicator">
+            <span class="current-page">1</span>
+            <span class="page-separator">/</span>
+            <span class="total-pages">2</span>
+        </div>
+        <button class="nav-arrow nav-next" id="nextPage" aria-label="Página siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Contenedor de páginas -->
+    <div class="pages-wrapper">
+        
+        <!-- PÁGINA 1: CARÁTULA -->
+        <section class="page active" id="page1">
+            <div class="page-sheet">
+                
+                <!-- Imagen decorativa superior izquierda -->
+                <div class="decorative-image top-left">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#1a2b4a;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#c49b63;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#grad1)" d="M47.1,-57.3C59.9,-45.7,68.4,-29.3,71.8,-11.7C75.2,5.9,73.5,24.7,64.8,39.8C56.1,54.9,40.4,66.3,23.3,71.2C6.2,76.1,-12.3,74.5,-28.9,67.8C-45.5,61.1,-60.2,49.3,-67.8,33.8C-75.4,18.3,-75.9,-0.9,-70.5,-17.9C-65.1,-34.9,-53.8,-49.7,-39.8,-61C-25.8,-72.3,-9.1,-80.1,4.9,-85.8C18.9,-91.5,34.3,-68.9,47.1,-57.3Z" transform="translate(100 100)" opacity="0.2"/>
+                    </svg>
+                </div>
+
+                <!-- Imagen decorativa inferior derecha -->
+                <div class="decorative-image bottom-right">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#c49b63;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#2d4a6f;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#grad2)" d="M43.7,-52.5C56.9,-42.1,68.2,-28.3,71.3,-12.8C74.4,2.7,69.3,19.9,60.1,34.4C50.9,48.9,37.6,60.7,21.8,67.2C6,73.7,-12.3,75,-28.2,69.5C-44.1,64,-57.6,51.7,-65.6,36.2C-73.6,20.7,-76.1,2,-72.8,-15.3C-69.5,-32.6,-60.4,-48.5,-47.5,-59C-34.6,-69.5,-17.3,-74.6,-0.7,-73.7C15.9,-72.8,30.5,-62.9,43.7,-52.5Z" transform="translate(100 100)" opacity="0.2"/>
+                    </svg>
+                </div>
+
+                <!-- Logo Universidad con átomo -->
+                <div class="university-logo">
+                    <div class="logo-circle">
+                        <div class="atom-icon">
+                            <div class="nucleus"></div>
+                            <div class="orbit orbit-1"></div>
+                            <div class="orbit orbit-2"></div>
+                            <div class="orbit orbit-3"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Información institucional -->
+                <div class="institutional-info">
+                    <h1 class="university-name">Universidad Central del Ecuador</h1>
+                    <h2 class="faculty-name">Facultad de Filosofía, Letras y Ciencias de la Educación</h2>
+                    <div class="division-line"></div>
+                </div>
+
+                <!-- Título del portafolio -->
+                <div class="portfolio-title">
+                    <h3 class="subject-label">Portafolio Estudiantil</h3>
+                    <h4 class="subject-name">FÍSICA</h4>
+                    <div class="decorative-element"></div>
+                </div>
+
+                <!-- Información del estudiante -->
+                <div class="student-info">
+                    <div class="info-row">
+                        <div class="info-block">
+                            <span class="info-label">Estudiante:</span>
+                            <span class="info-value">Averos Sanchez Jhordan Jhoel</span>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-block">
+                            <span class="info-label">Docente:</span>
+                            <span class="info-value">Msc. Diego Tipán</span>
+                        </div>
+                    </div>
+                    <div class="info-row double-column">
+                        <div class="info-block">
+                            <span class="info-label">Curso:</span>
+                            <span class="info-value">Quinto semestre</span>
+                        </div>
+                        <div class="info-block">
+                            <span class="info-label">Paralelo:</span>
+                            <span class="info-value">b</span>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-block">
+                            <span class="info-label">Periodo académico:</span>
+                            <span class="info-value">2025 - 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="cover-footer">
+                    <p class="location"></p>
+                    <p class="year"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA 2: ÍNDICE -->
+        <section class="page" id="page2">
+            <div class="page-sheet">
+                
+                <!-- Imagen decorativa para el índice -->
+                <div class="decorative-image-index">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#1a2b4a;stop-opacity:0.1" />
+                                <stop offset="100%" style="stop-color:#c49b63;stop-opacity:0.1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="100" cy="100" r="80" fill="url(#grad3)" opacity="0.3"/>
+                        <circle cx="100" cy="100" r="60" fill="none" stroke="url(#grad3)" stroke-width="2" opacity="0.5"/>
+                        <circle cx="100" cy="100" r="40" fill="none" stroke="url(#grad3)" stroke-width="2" opacity="0.7"/>
+                    </svg>
+                </div>
+
+                <div class="content-container">
+                    <h2 class="page-title">Índice de Contenidos</h2>
+                    
+                    <div class="index-content">
+                        
+                        <!-- Sílabo de la Materia -->
+                        <div class="index-section">
+                            <h3 class="section-title">
+                                <span class="section-number">01</span>
+                                Sílabo de la Materia
+                            </h3>
+                            <ul class="index-list">
+                                <li class="index-item">
+                                    <a href="https://drive.google.com/file/d/1ZsgPgLzlPfvLmV0JNlykz0q9QnVb-zT-/view?usp=sharing" target="_blank" class="index-link">
+                                        <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                        </svg>
+                                        <span class="link-text">Sílabo de Física</span>
+                                        <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Folleto del Sistema Internacional de Unidades -->
+                        <div class="index-section">
+                            <h3 class="section-title">
+                                <span class="section-number">02</span>
+                                Folleto del Sistema Internacional de Unidades
+                            </h3>
+                            <ul class="index-list">
+                                <li class="index-item">
+                                    <a href="TU_LINK_DE_DRIVE_AQUI" target="_blank" class="index-link">
+                                        <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                        </svg>
+                                        <span class="link-text">Folleto SI - Unidades</span>
+                                        <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Trabajos Individuales -->
+                        <div class="index-section">
+                            <h3 class="section-title">
+                                <span class="section-number">03</span>
+                                Trabajos Individuales
+                            </h3>
+                            
+                            <!-- Mapas Mentales -->
+                            <div class="subsection">
+                                <h4 class="subsection-title">Mapas Mentales</h4>
+                                <ul class="index-list">
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/18_4i62gk2Ody61h4QCbhRjv8HaoO9qYh/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                                <path d="M12 1v6m0 6v6"></path>
+                                                <path d="m4.93 4.93 4.24 4.24m5.66 5.66 4.24 4.24"></path>
+                                                <path d="M1 12h6m6 0h6"></path>
+                                                <path d="m4.93 19.07 4.24-4.24m5.66-5.66 4.24-4.24"></path>
+                                            </svg>
+                                            <span class="link-text">Movimiento Parabólico</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1JXHWJk8GQBb55aSRnO8B7CLvpiOBPJoW/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                                <path d="M12 1v6m0 6v6"></path>
+                                                <path d="m4.93 4.93 4.24 4.24m5.66 5.66 4.24 4.24"></path>
+                                                <path d="M1 12h6m6 0h6"></path>
+                                                <path d="m4.93 19.07 4.24-4.24m5.66-5.66 4.24-4.24"></path>
+                                            </svg>
+                                            <span class="link-text">Alfabeto Griego</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1-CAGnmrBp21XJNq0L8_FF3Ij7QaLuNYV/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                                <path d="M12 1v6m0 6v6"></path>
+                                                <path d="m4.93 4.93 4.24 4.24m5.66 5.66 4.24 4.24"></path>
+                                                <path d="M1 12h6m6 0h6"></path>
+                                                <path d="m4.93 19.07 4.24-4.24m5.66-5.66 4.24-4.24"></path>
+                                            </svg>
+                                            <span class="link-text">Vectores</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/15SeF5IgnYjx17UCn6_Jj4D4HMa2ud3RE/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                                <path d="M12 1v6m0 6v6"></path>
+                                                <path d="m4.93 4.93 4.24 4.24m5.66 5.66 4.24 4.24"></path>
+                                                <path d="M1 12h6m6 0h6"></path>
+                                                <path d="m4.93 19.07 4.24-4.24m5.66-5.66 4.24-4.24"></path>
+                                            </svg>
+                                            <span class="link-text">Sistema de Medidas de Ángulos</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/17wz2hWsRGzYRd5ylGn5b5UDBjewizxx-/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                                <path d="M12 1v6m0 6v6"></path>
+                                                <path d="m4.93 4.93 4.24 4.24m5.66 5.66 4.24 4.24"></path>
+                                                <path d="M1 12h6m6 0h6"></path>
+                                                <path d="m4.93 19.07 4.24-4.24m5.66-5.66 4.24-4.24"></path>
+                                            </svg>
+                                            <span class="link-text">Sistema de Coordenadas</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1clQLI0_ACNMPN7gSkmiwkCN13Y0BNkOS/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                                <path d="M12 1v6m0 6v6"></path>
+                                                <path d="m4.93 4.93 4.24 4.24m5.66 5.66 4.24 4.24"></path>
+                                                <path d="M1 12h6m6 0h6"></path>
+                                                <path d="m4.93 19.07 4.24-4.24m5.66-5.66 4.24-4.24"></path>
+                                            </svg>
+                                            <span class="link-text">Operaciones Vectoriales</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1oKuSN_XoWNVbpTf4xBlWC2-zIMZs4CC8/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                                <path d="M12 1v6m0 6v6"></path>
+                                                <path d="m4.93 4.93 4.24 4.24m5.66 5.66 4.24 4.24"></path>
+                                                <path d="M1 12h6m6 0h6"></path>
+                                                <path d="m4.93 19.07 4.24-4.24m5.66-5.66 4.24-4.24"></path>
+                                            </svg>
+                                            <span class="link-text">Sistema Internacional de Unidades</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Tareas -->
+                            <div class="subsection">
+                                <h4 class="subsection-title">Tareas</h4>
+                                <ul class="index-list">
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/11Gs37CFNmB0RHcw198fsnhNto5vT-kaC/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                            </svg>
+                                            <span class="link-text">Tarea 1</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/13q9wixnOUeKha74TtkOy4KJGtjobnZyD/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                            </svg>
+                                            <span class="link-text">Tarea 2</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/15abDfC2oAM59XVkUV1X90uSN50oWLBDx/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                            </svg>
+                                            <span class="link-text">Tarea 3</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1QVfEj6D1AexGlMEGusm26uyU3yvFIozd/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                            </svg>
+                                            <span class="link-text">Tarea 4</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                        <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1CC_v3nzVt0Xf73BRv5F9yi5fcw4Ovim3/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                            </svg>
+                                            <span class="link-text">Tarea 5</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1HrxIyKIKrnIeeKcV5X6TlebkDKXue5M2/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                            </svg>
+                                            <span class="link-text">Tarea 6</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/18IUgRxEowoqsa-FPK56Er16qfzUpkxYR/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                            </svg>
+                                            <span class="link-text">Tarea 7</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Evaluaciones Individuales -->
+                            <div class="subsection">
+                                <h4 class="subsection-title">Evaluaciones</h4>
+                                <ul class="index-list">
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1tKID9TFdqhmICzGvFouiJpXFVGPWlPvb/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                            </svg>
+                                            <span class="link-text">Evaluación Unidad 1</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1AGkFNBO0FYmKUaR_pUoZyKh7ir4rS7VV/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                            </svg>
+                                            <span class="link-text">Evaluación Unidad 2</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1qmeaehUOynRE1RZ4PZ8gqlM2WQPojDWa/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                            </svg>
+                                            <span class="link-text">Evaluación Unidad 3</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/17B2ItHtz0FZc9FwZCm3xa_CZzmkBGAbn/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                            </svg>
+                                            <span class="link-text">Evaluación Unidad 4</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="index-section">
+                            <h3 class="section-title">
+                                <span class="section-number">04</span>
+                                Trabajos Grupales
+                            </h3>
+                            
+                            <!-- Informes de Laboratorio  -->
+                            <div class="subsection">
+                                <h4 class="subsection-title">Informes de Laboratorio</h4>
+                                <ul class="index-list">
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1Lua0tBoqAboFvalnmXDXsHo8gHCplhTh/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                            </svg>
+                                            <span class="link-text">Mediciones Directas e Indirectas</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/18-sFBSS1ulEmcUK2EGVBnnDl5DqIt0a8/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                            </svg>
+                                            <span class="link-text">Propagación de Errores</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1f2BChLOC7vee45kvOBC2xgQXsTSWXZs5/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                            </svg>
+                                            <span class="link-text">Vectores en el Espacio</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1cx4kA7NUNUb-Ve6qRQziRCQGfFM6_bCx/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                            </svg>
+                                            <span class="link-text">MRU - Tubo de Inmersión</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/11Lie97pVsDP4EZKRcdPBPWBPujmEfVhd/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                            </svg>
+                                            <span class="link-text">MCUA - Disco de Neumático</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/14uWmfNHcBwDrabII15QeRU8XTLrlHAAo/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                            </svg>
+                                            <span class="link-text">MRUA - Plano de Galileo</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/11mZCG6qBeYbHMnnqCPxKPsSHYg9S2pav/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                            </svg>
+                                            <span class="link-text">Cinometro</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1yugmRvh0vSGO3o_iA6pPQsyOho4aSWdG/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                            </svg>
+                                            <span class="link-text">Movimiento Parabólico -Catapulta</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1z_oegZZc-o312OJf26ZGzfKT_GPHXz1c/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                            </svg>
+                                            <span class="link-text">Máquina de Atwood</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1N3XXVwyvPQFbkrzQxMgPItuWYxbmb0-A/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                            </svg>
+                                            <span class="link-text">Ley de Hooke</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Fundamentos Conceptuales - CON LOS 9 FUNDAMENTOS -->
+                            <div class="subsection">
+                                <h4 class="subsection-title">Fundamentos Conceptuales</h4>
+                                <ul class="index-list">
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1WHyIDVAwTCqbFSVcJKyl7hrC0xKz3lha/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                            </svg>
+                                            <span class="link-text">MCU</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1j4ZpM2w5UjM4JbV3C2Bfpl0RmqmqVqM9/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                            </svg>
+                                            <span class="link-text">MCUA</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1wv2K41_D9he1QNKIk8uio32KBbJ8Al5h/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                            </svg>
+                                            <span class="link-text">Mediciones Directas e Indirectas</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1QrJAuKXyU0SBw7lAZTyxKXz5-NeahDkP/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                            </svg>
+                                            <span class="link-text">Movimiento Parabólico - Catapulta</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/13EPjhJym5cSx1Tujkf_8EIc0TdQ6yZ3C/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                            </svg>
+                                            <span class="link-text">MRU - Tubo inmersión</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1nJ3q7o7kuNC0OF-p-Wp12wZ0o24UhLMK/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                            </svg>
+                                            <span class="link-text">Plano de galileo</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1w51CYr7Ng7AVD-bTnGTjuTP1cL29pPdN/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                            </svg>
+                                            <span class="link-text">Vectores en espacio</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/19PwPftwnQbYXTEPGxygMiGzIwnp2QoT_/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                            </svg>
+                                            <span class="link-text">Propagación de Errores en Mediciones Directas e Indirectas</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <!-- Evaluaciones Grupales -->
+                            <div class="subsection">
+                                <h4 class="subsection-title">Evaluaciones</h4>
+                                <ul class="index-list">
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1usaMm2N1cxdR_AnUASHeIHS1leX54Q4X/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                            </svg>
+                                            <span class="link-text">Evaluación 1</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1-MM-IjT1FXM-HPb44J7xgkU7E9fDrrZQ/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                            </svg>
+                                            <span class="link-text">Evaluación 2</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1fpj8KJBtdf_TsM8VssLL7aT__IFizWaE/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                            </svg>
+                                            <span class="link-text">Evaluación 3</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1XJsr3wpuokQezdmmk8NcOdPGsi3kXGSr/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                            </svg>
+                                            <span class="link-text">Evaluación 4</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                      <li class="index-item">
+                                        <a href="https://drive.google.com/file/d/1rPOB9dvFpuW-qWrzZFwklAlvMTPrvcdo/view?usp=sharing" target="_blank" class="index-link">
+                                            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 11 12 14 22 4"></polyline>
+                                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                            </svg>
+                                            <span class="link-text">Evaluación 5</span>
+                                            <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
